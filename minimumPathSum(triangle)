@@ -1,0 +1,29 @@
+def minimumPathSum(triangle, n):
+    # Write your code here.
+    mx=0
+    arr=[]
+    for i in triangle:
+        arr.append(len(i))
+    mx=max(arr)
+        
+        
+    for i in range(0,len(triangle)-1):
+        while mx-len(triangle[i])!=0:
+            triangle[i].append('X')
+    r,c=(n,mx)
+    dp={}    
+    L=[]
+    for j in range(c):
+        dp[(n-1,j)]=triangle[n-1][j]
+#     print(dp)
+    for i in range(n-2,-1,-1):
+        for j in range(0,i+1):
+#             print(i,j)
+            
+            p1=dp[(i+1,j)]+triangle[i][j]
+            p2=dp[(i+1,j+1)]+triangle[i][j]
+            dp[(i,j)]=min(p1,p2)
+    return dp[(0,0)]
+        
+
+    
