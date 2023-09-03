@@ -20,9 +20,9 @@ def abc():
             if tar>=A[ind]:
                 ds.append(A[ind])
                 tar=tar-A[ind]
-                foo(ind,tar,ds)
+                foo(ind,tar,ds)#take
                 ds.pop()
                 tar=tar+A[ind]
-            foo(ind+1,tar,ds)
+            foo(ind+1,tar,ds)#not take
         foo(0,B,[])
         return ans
