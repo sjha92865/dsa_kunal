@@ -50,3 +50,9 @@ if __name__=='__main__':
     v=[5,3,2,4,1]
     sorting(v)
     print(v)
+
+# 100 baat ki ek baat, parameter me pass kroge to, it is passed as reference variable meaning,
+# many ref variables pointing to same object, hence the original array will be sorted and returned.
+# https://www.geeksforgeeks.org/is-python-call-by-reference-or-call-by-value/
+# bubble sort compare adjacent elements do swapping according to condition and at the end of inner loop,
+# one element goes to its correct position
