@@ -50,7 +50,8 @@ if __name__=='__main__':
     v=[5,3,2,4,1]
     sorting(v)
     print(v)
-
+#https://www.youtube.com/watch?v=uwV80JaZrPs--- more understandable code.
+#O(n^2)T.C
 # 100 baat ki ek baat, parameter me pass kroge to, it is passed as reference variable meaning,
 # many ref variables pointing to same object, hence the original array will be sorted and returned.
 # https://www.geeksforgeeks.org/is-python-call-by-reference-or-call-by-value/
